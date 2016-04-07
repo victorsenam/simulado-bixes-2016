@@ -1,0 +1,199 @@
+% Configuração {{{
+\documentclass[a4paper,11pt]{article}
+\usepackage[brazil]{babel}
+\usepackage[utf8]{inputenc}
+%\usepackage[T1]{fontenc} % T2A para cirílico, acho
+% \usepackage{arabtex} % para fonte arábica
+% \usepackage{utf8}    % para fonte arábica
+
+\usepackage{indentfirst}
+\usepackage{float}
+\usepackage{fancyvrb}
+\usepackage{multicol}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+%\usepackage{hyperref}
+\usepackage{epsfig}
+\usepackage{multirow}
+
+\usepackage{tikz}
+\usetikzlibrary{arrows,shapes,positioning,topaths,intersections,calc,snakes}
+
+\setlength{\marginparwidth}{0pt}
+\setlength{\oddsidemargin}{-0.25cm}
+\setlength{\evensidemargin}{-0.25cm}
+\setlength{\marginparsep}{0pt}
+
+\setlength{\textwidth}{16.5cm}
+\setlength{\textheight}{25.5cm}
+
+\setlength{\voffset}{-1in}
+
+\newcommand{\PASTA}{.}
+
+\newcommand{\insereArquivo}[1]{\VerbatimInput[xleftmargin=0mm,numbers=none,obeytabs=true]{\PASTA/#1}}
+
+\newcommand{\textoDiversasInstancias}{A entrada é composta por
+diversas instâncias. A primeira linha da entrada contém um inteiro~$T$
+indicando o número de instâncias. }
+\newcommand{\textoDiversasInstanciasEOF}{A entrada é composta por
+  diversas instâncias e termina com final de arquivo (\texttt{EOF}).}
+
+\newcommand{\arquivoProblema}[1]{\vspace{-0.3cm} \noindent {\em
+Arquivo: \texttt{#1.[c|cpp|java|py]} \\}}
+
+\newcommand{\textoSaidaPadrao}{\vspace{0.2cm} \noindent \emph{A
+saída deve ser escrita na saída padrão.}}
+
+\newcommand{\textoEntradaPadrao}{\vspace{0.2cm} \noindent \emph{A
+entrada deve ser lida da entrada padrão.}}
+
+
+\newcommand{\exemplo}[2]{
+\vspace{0.3cm}
+\begin{minipage}[c]{0.9\textwidth}
+\begin{center}
+\begin{tabular}{|l|l|} \hline
+\begin{minipage}[t]{0.5\textwidth}
+\bf{Exemplo de entrada}
+\insereArquivo{#1}
+\vspace{.2cm}
+\end{minipage}
+&
+\begin{minipage}[t]{0.5\textwidth}
+\bf{Saída para o exemplo de entrada}
+\insereArquivo{#2}
+\end{minipage}\\
+\hline
+\end{tabular}
+\end{center}
+\end{minipage}}
+
+
+\newcommand{\incluir}[2]{
+\renewcommand{\PASTA}{#1}
+\input{#1/#2}
+}
+% }}}
+
+
+\begin{document}
+
+% \setcode{utf8} % para fonte arábica
+
+% Capa {{{
+\begin{center}
+\noindent
+
+\hrule
+
+\vspace{3.0cm}
+
+\begin{Huge}
+  % {\bf $1^{\underline{o}}$ Simulado para ingressantes 2015}
+  {\bf II Simulado para Ingressantes 2016}
+\end{Huge}
+
+\vspace{6.0cm}
+
+\begin{Huge}
+{\bf Caderno de Problemas}
+\end{Huge}
+
+\vspace{6.0cm}
+
+\begin{Large}
+	{\bf Universidade de São Paulo}
+\end{Large}
+
+\vspace{0.5cm}
+
+\vfill
+
+
+Quinta-feira, 28 de abril de 2016.
+
+\vfill
+\hrule
+\end{center}
+
+\thispagestyle{empty}
+
+\newpage
+
+\section*{Instruções}
+
+\begin{itemize}
+	\item A competição tem duração de 5 horas;
+	\item Faltando 1 hora para o término da competição, o placar será congelado, ou seja, o placar 
+	não será mais atualizado;
+	\item Faltando 15 minutos para o término da competição, os times não receberão mais a resposta
+	de suas submissões.
+	\item A entrada de cada problema deve ser lida da entrada padrão (teclado);
+	\item A saída de cada problema deve ser escrita na saída padrão (tela);
+	\item Siga o formato apresentado na descrição da saída, caso contrário não é garantido que seu
+	código será aceito;
+	\item Na saída, toda linha deve terminar com o caracter `\texttt{\textbackslash n}';
+	\item O nome do arquivo de códigos em Java deve ser \textbf{exatamente} como indicado abaixo
+	do nome de cada problema. Para C/C++/Python é recomendado usar o nome indicado;
+	\item Para códigos em Java, o nome da classe principal deve ser \textbf{igual} ao nome do
+	arquivo.
+\end{itemize}
+
+\vspace*{1.0cm}
+
+\renewcommand{\arraystretch}{1.5}
+\begin{center}
+	\begin{tabular}{|c|l|p{5.8cm}|}
+		\hline
+		\multicolumn{3}{|c|}{Respostas das submissões}\\
+		\hline
+		Not answered yet & \multicolumn{1}{|c|}{-} & Paciência\\
+		\hline
+		YES & \multicolumn{1}{|c|}{-} & Código aceito. Parabéns!\\
+		\hline
+		\multirow{11}{*}{NO} & Compilation error & Erro de compilação\\
+		\cline{2-3}
+		 & Wrong answer & Errado. Pode tentar de novo.\\
+		\cline{2-3}
+		 & \multirow{2}{*}{Time limit exceeded} & 
+		Seu programa demora muito para dar a resposta (certa ou errada)\\
+		\cline{2-3}
+		 & \multirow{2}{*}{Runtime error} & 
+		Erro em tempo de execução (ex.: \textit{segmentation fault})\\
+		\cline{2-3}
+		 & Problem name mismatch & Leia as duas últimas instruções\\
+		\cline{2-3}
+		 & \multirow{2}{*}{Presentation error} & Não está imprimindo no formato 
+		exigido no enunciado\\
+		\cline{2-3}
+		 & \multirow{2}{*}{If possible, contact staff} & 
+		Não sei, você conseguiu fazer algo inesperado\\
+		\hline
+	\end{tabular}
+\end{center}
+\renewcommand{\arraystretch}{1.0}
+
+
+
+\newpage
+
+\newcounter{letra}
+\setcounter{letra}{1}
+\newcommand{\proxLetra}{\Alph{letra}\stepcounter{letra}}
+
+\incluir{../problemas/ambulatorio/docs}{enunciado.tex} \clearpage
+\incluir{../problemas/aula/docs}{enunciado.tex} \clearpage
+\incluir{../problemas/cinema/docs}{enunciado.tex} \clearpage
+\incluir{../problemas/circular/docs}{enunciado.tex} \clearpage
+\incluir{../problemas/japones/docs}{enunciado.tex} \clearpage
+\incluir{../problemas/karaoke/docs}{enunciado.tex} \clearpage
+\incluir{../problemas/kart/docs}{enunciado.tex} \clearpage
+\incluir{../problemas/nim/docs}{enunciado.tex} \clearpage
+\incluir{../problemas/pablito/docs}{enunciado.tex} \clearpage
+\incluir{../problemas/perdido/docs}{enunciado.tex} \clearpage
+\incluir{../problemas/raia/docs}{enunciado.tex} \clearpage
+\incluir{../problemas/restaurante/docs}{enunciado.tex} \clearpage
+\incluir{../problemas/xadrez/docs}{enunciado.tex} \clearpage
+
+\end{document}

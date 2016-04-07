@@ -1,0 +1,14 @@
+Neste diretório fica os arquivos referentes ao enunciado do problema.
+
+Enunciado que aparecerá no caderno de problemas deve ser escrito no
+arquivo enunciado.tex, seguindo o esqueleto contindo no arquivo.
+
+No arquivo comentario.tex escreva um texto explicando a(s) solução
+esperada(s) para o problema. Não precisa ser muito detalhado a ponto
+de alguém ser capaz de ler e traduzir em um código sem pensar muito.
+A ideia é apenas ajudar quem não conseguiu passar o problema a
+entender a ideia geral da solução e porque ela funciona. Uma explicação
+da complexidade do problema, quando não trivial, é bem-vinda.
+
+No diretório docs/tests ficam os arquivos de entrada e saída do
+exemplo que aparecerá no enunciado.

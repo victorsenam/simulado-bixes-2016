@@ -1,0 +1,8 @@
+Neste diretório serão armazenados os arquivos de entrada e de saída
+que serão usados para a correção dos códigos.
+
+Arquivos de entrada devem ser nomeados como in<número> e de saída
+devem ser out<número>. O arquivo de entrada final, que será a
+concatenação de cada arquivo de entrada sera chamado final.in.
+O arquivo final de saída será chamado final.out.
+

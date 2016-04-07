@@ -1,0 +1,10 @@
+Pasta problemas: Contém as pastas com todos os enunciados, cabeçalhos e comentários dos problemas.
+Pasta main: contém a versão final do caderno do provas e todos os arquivos de configuração (NAO EDITEM NADA NESTA PASTA)
+As outras pastas contém arquivos que não interessam muito para voces (coisas do latex) nao mexam em nada lá dentro.
+
+Depois de editar o seu problema, compile o arquivo caderno.tex que está na pasta main ("pdflatex caderno.tex"). Provavelmente vai ter muitos erros de compilação pois nem todos os problemas estão prontos, ignore-os, depois de compilar caderno.latex ele gerará um aquivo caderno.pdf (seu problema será incluído lá junto com os demais problemas já feitos). 
+
+Fase 1: caderno.tex e comentarios.tex completo até 15/04, isso equivale a ter todos os arquivos da pasta docs do seu problema preenchidos
+Fase 2: Fazer as soluções e casos de teste do problema. Nesse ponto, todas as pastas internas do seu problema devem estar prontas. Até dia 25/04
+
+

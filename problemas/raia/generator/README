@@ -1,0 +1,9 @@
+Neste diretório ficará os script/programa que vai gerar os arquivos
+de entrada.
+
+Use uma semente fixa para o gerador de números aleatórios.
+
+Os arquivos de entrada devem chamar in<número>.
+
+Cada arquivo de entrada pode conter mais de um caso de teste.
+

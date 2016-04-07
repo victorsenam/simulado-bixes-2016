@@ -1,0 +1,36 @@
+Coloque neste diretório os scripts para verificação dos
+arquivos de entrada e/ou de saída. Essa verificação serve
+para verificar se os arquivos de entrada e saída, de fato,
+seguem o formato exato do especificado no enunciado. Sendo
+possível, também é bom verificar se as respostas do arquivo
+de saída estão corretas.
+
+Scripts são mais recomendados pela facilidade de uso de
+expressões regulares, mas caso necessário, pode ser um
+código em C++. Lembrando que é preciso verificar coisas
+como quantidade de espaços entre números, \n nos lugares
+certos, etc.
+
+Verificadores de entrada devem chamar: chk-input.[rb,py,cpp]
+Verificadores de saída devem chamar: chk-output.[rb,py,cpp]
+Verificadores que checam entrada e saída simultaneamente
+devem chamar: chk-io.[rb,py,cpp]
+
+Os arquivos de entrada e/ou saída devem ser passados como
+parâmetro, sendo primeiro entrada e depois saída, no caso
+de checar ambos simultaneamente.
+
+Caso encontrado algum erro durante a checagem, imprima uma
+mensagem descrevendo o problema e em qual instância. O valor
+devolvido pelo script deve ser diferente de 0.
+
+Caso nenhum erro foi encontrado, basta imprimir uma
+mensagem dizendo o total de instâncias testadas. Podem
+ter outras mensagens, se achar necessário. O valor devolvido
+pelo script deve ser 0.
+
+Se precisar de outros tipos de verificadores de "consistência", 
+coloque-os neste diretório também.
+
+Identifique o autor dos verificadores com um comentário
+no código dos verificadores.

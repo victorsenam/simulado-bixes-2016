@@ -1,0 +1,11 @@
+Neste diretório são armazenados os códigos de soluções para o problema.
+
+Códigos em C/C++ devem ser nomeados da seguinte forma:
+  <autor>[número]-<ac|tle|wa>.<c|cpp>
+onde campos entre <> são obrigatórios e entre [] são opcionais.
+
+Para cada código em Java, deve ser criado um diretório/pasta com o nome:
+  <autor>[número]-<ac|tle|wa>.java
+e dentro do diretório deve conter o código com o nome especificado no
+enuncado do problema.
+
