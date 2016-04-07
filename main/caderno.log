@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.4.6)  7 APR 2016 14:36
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.4.6)  7 APR 2016 15:56
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -945,28 +945,28 @@ e
 )) ABD: EveryShipout initializing macros [1
 
 {/usr/local/texlive/2015basic/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 127.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 125.
 
 
 (/usr/local/texlive/2015basic/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 127.
-LaTeX Font Info:    Try loading font information for OMS+cmtt on input line 136
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 125.
+LaTeX Font Info:    Try loading font information for OMS+cmtt on input line 139
 .
-LaTeX Font Info:    No file OMScmtt.fd. on input line 136.
+LaTeX Font Info:    No file OMScmtt.fd. on input line 139.
 
 
 LaTeX Font Warning: Font shape `OMS/cmtt/m/n' undefined
 (Font)              using `OMS/cmsy/m/n' instead
-(Font)              for symbol `textbackslash' on input line 136.
+(Font)              for symbol `textbackslash' on input line 139.
 
-LaTeX Font Info:    Try loading font information for U+msa on input line 147.
+LaTeX Font Info:    Try loading font information for U+msa on input line 150.
 (/usr/local/texlive/2015basic/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 147.
+LaTeX Font Info:    Try loading font information for U+msb on input line 150.
 
 (/usr/local/texlive/2015basic/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -974,24 +974,24 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ! Undefined control sequence.
 <recently read> \multirow 
                           
-l.155 		\multirow
+l.158 		\multirow
                  {11}{*}{NO} & Compilation error & Erro de compilação\\
 ? 
 ! Undefined control sequence.
-l.159 		 & \multirow
+l.162 		 & \multirow
                     {2}{*}{Time limit exceeded} &
 ? 
 ! Undefined control sequence.
-l.162 		 & \multirow
+l.165 		 & \multirow
                     {2}{*}{Runtime error} &
 ? 
 ! Undefined control sequence.
-l.167 		 & \multirow
+l.170 		 & \multirow
                     {2}{*}{Presentation error} & Não está imprimindo no fo...
 
 ? 
 ! Undefined control sequence.
-l.170 		 & \multirow
+l.173 		 & \multirow
                     {2}{*}{If possible, contact staff} &
 ? 
 [2]
@@ -1158,10 +1158,10 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 16535 strings out of 494501
- 358403 string characters out of 6167031
- 416298 words of memory out of 5000000
- 19391 multiletter control sequences out of 15000+600000
+ 16521 strings out of 494501
+ 358188 string characters out of 6167031
+ 416295 words of memory out of 5000000
+ 19377 multiletter control sequences out of 15000+600000
  11094 words of font info for 42 fonts, out of 8000000 for 9000
  319 hyphenation exceptions out of 8191
  55i,13n,80p,521b,432s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1175,7 +1175,7 @@ ic/amsfonts/cm/cmr8.pfb></usr/local/texlive/2015basic/texmf-dist/fonts/type1/pu
 blic/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2015basic/texmf-dist/fonts/type
 1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2015basic/texmf-dist/fonts/
 type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on caderno.pdf (15 pages, 131234 bytes).
+Output written on caderno.pdf (15 pages, 130944 bytes).
 PDF statistics:
  92 PDF objects out of 1000 (max. 8388607)
  65 compressed objects within 1 object stream
