@@ -1,5 +1,6 @@
 \section*{Problema \proxLetra: }
-\autores{}{}
+\autores{Gabriel de Russo e Carmo}{Gabriel de Russo e Carmo}
+Para resolver o problema, precisamos verificar se uma sequência de parênteses é válida. Repare que todo parêntese aberto precisa ser fechado e um parêntese fechado precisa de um aberto correspondente. Podemos manter um contador que recebe +1 toda vez que abrimos um parêntese e -1 toda vez que fechamos. Nota-se que se este contador ficar negativo ou terminar positivo, a expressão é inválida. Caso contrário, a expressão é válida. Logo, temos uma solução em $O(|S|)$.
 
 
 %%% Local Variables: 
