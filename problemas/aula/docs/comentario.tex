@@ -1,5 +1,11 @@
 \section*{Problema \proxLetra: }
-\autores{}{}
+\autores{Yan Soares Couto}{Yan Soares Couto}
+
+Para conseguir \emph{pelo menos} 70\% de presença é necessario comparecer a $g \coloneqq \lceil \frac{7n}{10} \rceil$ aulas.
+É necessário então ir a mais $g - k$ aulas, e essa é a resposta à primeira pergunta. Note que se $g - k < 0$ a resposta é $0$ (nesse caso Madeira já compareceu a mais de 70\% das aulas), e se $g - k > n - m$ a resposta é $-1$ (nesse caso mesmo indo em todas aulas não é possível alcançar 70\%).
+
+Para a segunda pergunta basta considerar a presença sendo que Madeira vai comparecer a todas as próximas $n - m$ aulas, ou seja, a porcentagem vai ser $\lfloor \frac{100(n - m + k)}{n} \rfloor$, essa conta deve ser feita com inteiros e \emph{não} deve ser arredondada para o valor mais próximo, como evidente no Exemplo 2.
+
 
 
 %%% Local Variables: 
