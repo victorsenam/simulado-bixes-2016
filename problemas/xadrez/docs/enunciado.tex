@@ -1,19 +1,22 @@
-\section*{Problema \proxLetra: MaratonIME faz alguma coisa}
-\arquivoProblema{Exemplo}
+\section*{Problema \proxLetra: MaratonIME joga Xadrez}
+\arquivoProblema{xadrez}
 
-Dois pássarinho voavam pelo lindo céu azul da Austrália quando encontraram um dos membros do MaratonIME preso em uma árvore. Ele gritava ``Me ajudem, ganhei tantos balões durante o simulado que comecei a voar e acabei preso aqui, vocês poderiam me ajudar a descer?''. Os pássaros pensaram e refletiram quais opções eles tinham naquele estranho momento:
-
+Nosso querido Nathan, quando guri, gostava muito de jogar Xadrez, mas isso já faz muito tempo. Um dia desses ele foi desafiado pelo famigerado \@luisgust para uma partida de xadrez e, como gosta muito de um desafio, aceitou. O problema é que Nathan anda se esquecendo de algumas das regras do jogo, então ele pediu sua ajuda para determinar, em alguns momentos do jogo, se uma dada peça inimiga pode ser capturada com um único movimento. \\
+O xadrez, no maratonIME, é representado como um grid de caracteres. Ao invés de jogar com peças brancas e pretas, os times jogam com peças maiúsculas (representadas por caracteres maiúsculos) e minúsulas (represetadas por caracteres minúsculos). O Nathan escolheu jogar com as peças minúsculas, porque elas jogam antes. \\
+Além disso, usualmente, as posições de um tabuleiro de xadrez são dadas num sistema de coordenadas específico. Toda posição é um par com um caractere entre ``a'' (inclusive) e ``h'' inclusive e um inteiro entre ``1'' (inclusive) e ``8'' (inclusive). Por exemplo, a posição ``d2'' se refere à segunda casa da quarta coluna (de cima para baixo, da esquerda para a direita) e a posição ``f6'' se refere à sexta casa da sexta coluna. As peças minúsculas começam do lado de baixo do tabuleiro, ou seja, nas linhas ``7'' e ``8''. \\
+O maratonIME, além disso, usa um sistema um pouco simplificado de movimentos de xadrez. Para te ajudar com o seu programa, foi fornecido um manual com os movimentos que cada peça pode realizar ao capturar outra peça e as letras que representam cada peça. \\
 \begin{itemize}
-	\item ``Podemos rir e ir embora, mas ele pode tentar agredir a gente com um balão.''
-	\item ``Podemos ajudar e pedir comida em troca (além de metade de seus balões).''
+    \item O peão, representado pelos caracteres ``p'' ou ``P'', pode capturar peças diagonalmente adjacentes a ela que estejam à frente dela, ou seja, os peões minúsculos podem capturar peças que estejam nas diagonais superiores adjacentes a ela, por exemplo, um peão na posição ``c4'' pode capturar peças nas posições ``b3'' ou ``b5''.
+    \item O cavalo, representado por ``c'' e ``C'', faz movimentos em L em qualquer um dos 8 sentidos possíveis, ou seja, ele anda duas casas em uma direção qualquer e, depois, uma casa em uma direção paralela à primeira. Um cavalo na posição ``c4'' pode capturar, em um movimento, peças nas posições ``a3'', ``a5'', ``b2'', ``b6'', ``d2'', ``d6'', ``e3'' e ``e5''.
+    \item A torre, representada por ``t'' e ``T'', consegue capturar qualquer peça que tenha alguma coordenada igual a ela e que seja visível, por ela, em uma linha reta, ou seja, não existe nenhuma peça na linha entre a torre e a peça a ser capturada. Por exemplo, uma torre em ``c4'' pode capturar qualquer peça na coluna ``c'' e na linha ``4'', desde que não haja nenhuma peça entre elas. Se houver uma torre em ``c4'' e uma outra peça qualquer em ``c6'', a torre não pode capturar ninguém em ``c7'' nem em ``c8''.
+    \item A 
 \end{itemize}
-
-Após muitas considerações, os pássaros decidiram ajudar o pobre maratonista, mas havia um problema: será que eles conseguiriam suportar o peso do rapaz? Sua função é dado o peso do competidor e quanto cada pássaro consegue carregar, dizer se eles conseguem trazer o maratonista para a terra. Os pássaros conseguem trazer o competidor se as somas dos valores que cada um consegue carregar for maior ou igual que o seu peso. 
 
 
 \subsection*{Entrada}
 \textoDiversasInstanciasEOF
 
+A entrada consiste de 
 A entrada consiste em uma única linha contendo um inteiro $p$, o peso do rapaz, seguido de dois inteiros $x$ e $y$, o quanto cada pássaro consegue carregar.
 
 
