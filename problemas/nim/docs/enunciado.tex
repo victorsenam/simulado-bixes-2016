@@ -1,33 +1,40 @@
-\section*{Problema \proxLetra: MaratonIME faz alguma coisa}
-\arquivoProblema{Exemplo}
+\section*{Problema \proxLetra: MaratonIME joga Nim}
+\arquivoProblema{nim}
 
-Dois pássarinho voavam pelo lindo céu azul da Austrália quando encontraram um dos membros do MaratonIME preso em uma árvore. Ele gritava ``Me ajudem, ganhei tantos balões durante o simulado que comecei a voar e acabei preso aqui, vocês poderiam me ajudar a descer?''. Os pássaros pensaram e refletiram quais opções eles tinham naquele estranho momento:
+Você abre seus olhos, mas tudo continua escuro. O mundo está escuro, e tudo balança. Você percebe que está trancado, mas antes de começar a se desesperar, você ouve um porta abrindo e a luz invade sua visão e te cega por alguns momentos.
 
-\begin{itemize}
-	\item ``Podemos rir e ir embora, mas ele pode tentar agredir a gente com um balão.''
-	\item ``Podemos ajudar e pedir comida em troca (além de metade de seus balões).''
-\end{itemize}
+Te ajudam a sair, você estava trancado num porta-malas. Você não reconhece as faces mascaradas, mas se lembra que no último treino para Maratona te falaram que ``o começo ainda estava por vir''. ``Então esse é o lendário desafio de iniciação do MaratonIME'', você já tinha ouvido boatos desse evento, e se sente honrado de ter sido selecionado.
 
-Após muitas considerações, os pássaros decidiram ajudar o pobre maratonista, mas havia um problema: será que eles conseguiriam suportar o peso do rapaz? Sua função é dado o peso do competidor e quanto cada pássaro consegue carregar, dizer se eles conseguem trazer o maratonista para a terra. Os pássaros conseguem trazer o competidor se as somas dos valores que cada um consegue carregar for maior ou igual que o seu peso. 
+Depois de entrar em um prédio abandonado, te sentam em uma cadeira velha. O primeiro teste é assistir um jogo de futebol sem nenhuma reação de animação. Fácil. O segundo é instalar Linux em um notebook em menos de 5 minutos. Você já estava preparado, sempre carrega seu pendrive com ArchLinux em caso de emergência. Você enfrenta mais testes, e consegue passar em todos apesar de algumas dificuldades.
+
+Depois de horas, os integrantes tiram suas máscaras, e cada um retira uma moeda do bolso. ``Ganhei! E ainda fiquei rico'' você pensa, mas percebe que eles colocam as moedas numa mesa na sua frente, divididas em duas pilhas. Renzo, o grande chefe do MaratonIME, pega uma cadeira e senta na sua frente. Vocês devem jogar uma partida de Nim, e se você vencer se torna um membro honorário do MaratonIME, ou seja, ganha um balão.
+
+Nim é um jogo de dois jogadores, que alternam turnos. Duas pilhas de moedas ficam em uma mesa e em uma jogada você pode tirar qualquer quantidade não nula de moedas de uma das pilhas. O último jogador a fazer uma jogada (e deixar as duas pilhas vazias) ganha.
+
+Você começa o jogo. Para não ser injusto foi garantido que existe uma forma de você ganhar. Escreva um programa que vença Renzo 100\% das vezes.
 
 
 \subsection*{Entrada}
-\textoDiversasInstanciasEOF
 
-A entrada consiste em uma única linha contendo um inteiro $p$, o peso do rapaz, seguido de dois inteiros $x$ e $y$, o quanto cada pássaro consegue carregar.
+Na primeira linha, dois interos, $x$ e $y$, o tamanho das pilhas, com $0 \leq x, y \leq 10^4$. É garantido que é possível vencer esse jogo.
 
+\subsection*{Interação}
 
-\subsection*{Saída}
+Na sua jogada, imprima dois inteiros, $i$ e $x$, onde $i$ é o número da pilha que você vai tirar moedas ($i \in \{1, 2\}$), e $x$ o número de moedas que vai retirar ($x \geq 1$, tal que a pilha $i$ tenha pelo menos $x$ pedras).
 
-A saída consiste em uma única linha contendo a string ``Sim'' se é possível salvar o rapaz, ou ``Nao'' caso contrário.
+Na jogada do Renzo, leia dois inteiros, no mesmo formato que os da sua jogada. Toda jogada do Renzo vai ser válida.
+
 
 % \textoSaidaPadrao
-
-\subsection*{Restrições}
-\begin{itemize}
-  \item $0 \leq p, x, y \leq 10^9$
-\end{itemize}
 
 \subsection*{Exemplos}
 
 \exemplo{tests/in1}{tests/out1}
+
+\subsection*{Notas}
+
+É claro que não fazemos um desafio de iniciação assim :P
+
+No exemplo, temos uma pilha com duas moedas e outra com uma. Você tira uma moeda da primeira pilha, agora qualquer moeda que Renzo retirar, você pode retirar a outra e ganhar.
+
+Lembre-se de, depois de imprimir sua jogada, fazer a descarga da saída, como \texttt{fflush(stdout);} em C, \texttt{cout.flush();} em C++, ou \texttt{sys.stdout.flush()} em Python.

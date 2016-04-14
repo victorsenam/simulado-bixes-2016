@@ -1,5 +1,22 @@
 \section*{Problema \proxLetra: }
-\autores{}{}
+\autores{Yan Soares Couto}{Yan Soares Couto}
+
+Seja $x$ e $y$ o tamanho das pilhas de uma partida de Nim.
+
+\textbf{Fato.} É possível vencer se e somente se $x \neq y$.
+
+\textbf{Prova.} Por indução em $x + y$.
+
+Base: Se $x = y = 0$ então o o Fato vale, pois não é possível vencer.
+
+Hipótese de Indução: Se $x + y > 0$, suponha que o Fato vale para $x' + y' < x + y$.
+
+Se $x = y$, então qualquer movimento feito vai tornar $x' \neq y'$, onde $x'$ e $y'$ são os novos números de moedas nas pilhas. Como $x' \neq y'$, pela hipótese de indução é possível seu inimigo vencer a partir dessa configuração, logo não é possível vencer começando de $x = y$.
+
+Se $x \neq y$, retire $|x - y| > 0$ moedas da maior pilha, tornando $x' = y'$, pela hipótese de indução é impossível seu inimigo vencer a partir dessa configuração, então é possível vencer de $x \neq y$. $\blacksquare$
+
+
+Então, para vencer Renzo, basta sempre retirar $|x - y|$ moedas da maior pilha, ou seja, tornar as pilhas iguais. Inicialmente $x \neq y$ pois é garantido no enunciado que é possível ganhar.
 
 
 %%% Local Variables: 
