@@ -7,22 +7,24 @@ Além disso, usualmente, as posições de um tabuleiro de xadrez são dadas num 
 O maratonIME, além disso, usa um sistema um pouco simplificado de movimentos de xadrez. Para te ajudar com o seu programa, foi fornecido um manual com os movimentos que cada peça pode realizar ao capturar outra peça e as letras que representam cada peça. \\
 \begin{itemize}
     \item O peão, representado pelos caracteres ``p'' ou ``P'', pode capturar peças diagonalmente adjacentes a ela que estejam à frente dela, ou seja, os peões minúsculos podem capturar peças que estejam nas diagonais superiores adjacentes a ela, por exemplo, um peão na posição ``c4'' pode capturar peças nas posições ``b3'' ou ``b5''.
-    \item O cavalo, representado por ``c'' e ``C'', faz movimentos em L em qualquer um dos 8 sentidos possíveis, ou seja, ele anda duas casas em uma direção qualquer e, depois, uma casa em uma direção paralela à primeira. Um cavalo na posição ``c4'' pode capturar, em um movimento, peças nas posições ``a3'', ``a5'', ``b2'', ``b6'', ``d2'', ``d6'', ``e3'' e ``e5''.
-    \item A torre, representada por ``t'' e ``T'', consegue capturar qualquer peça que tenha alguma coordenada igual a ela e que seja visível por ela em uma linha reta, ou seja, não existe nenhuma peça na linha entre a torre e a peça a ser capturada. Por exemplo, uma torre em ``c4'' pode capturar qualquer peça na coluna ``c'' e na linha ``4'', desde que não haja nenhuma peça entre elas. Se houver uma torre em ``c4'' e uma outra peça qualquer em ``c6'', a torre não pode capturar ninguém em ``c7'' nem em ``c8''.
-    \item O bispo, representado por ``b'' e ``B'', consegue capturar qualquer peça que esteja em alguma das diagonais que passam pelo bispo e que seja visivel por ele em uma linha reta, ou seja, 
+    \item O cavalo, representado por ``c'' ou ``C'', faz movimentos em L em qualquer um dos 8 sentidos possíveis, ou seja, ele anda duas casas em uma direção qualquer e, depois, uma casa em uma direção paralela à primeira. Um cavalo na posição ``c4'' pode capturar, em um movimento, peças nas posições ``a3'', ``a5'', ``b2'', ``b6'', ``d2'', ``d6'', ``e3'' e ``e5''.
+    \item A torre, representada por ``t'' ou ``T'', consegue capturar qualquer peça que tenha alguma coordenada igual a ela e que seja visível por ela em uma linha reta, ou seja, não existe nenhuma peça na linha entre a torre e a peça a ser capturada. Por exemplo, uma torre em ``c4'' pode capturar qualquer peça na coluna ``c'' e na linha ``4'', desde que não haja nenhuma peça entre elas. Se houver uma torre em ``c4'' e uma outra peça qualquer em ``c6'', a torre não pode capturar ninguém em ``c7'' nem em ``c8''.
+    \item O bispo, representado por ``b'' ou ``B'', consegue capturar qualquer peça que esteja em alguma das diagonais que passam pelo bispo e que seja visivel por ele em uma linha reta, ou seja, 
+    \item A rainha, representada por ``r'' ou ``R'', consegue fazer os movimentos da torre e os movimentos do bispo, ou seja, consegue, em um movimento, capturar qualquer peça que tenha alguma coordenada igual à dela ou que esteja em alguma diagonal a qual ela pertence desde que não haja nenhum obstáculo (outra peça) na linha reta entre a rainha e a peça que se quer capturar.
+    \item O rei, representado por ``k'' ou ``K'', consegue capturar qualquer um que esteja num quadrado que compartilha um vértice com o quadrado do rei, ou seja, ele consegue capturar alguém que esteja em alguma casa imediatamente vizinha à dele (diagonais inclusas). Assim, um rei na posição ``c4'' pode capturar somente peças nas posições ``b3'', ``b4'', ``b5'', ``c3'', ``c5'', ``d3'', ``d4'' e ``d5''.
 \end{itemize}
+Seu programa deve receber uma matriz e a posição da peça inimiga que o Nathan quer capturar e responder ``Sim'' se é possível capturar essa peça com um movimento e ``Não'' caso contrário.
 
 
 \subsection*{Entrada}
 \textoDiversasInstanciasEOF
 
-A entrada consiste de 
-A entrada consiste em uma única linha contendo um inteiro $p$, o peso do rapaz, seguido de dois inteiros $x$ e $y$, o quanto cada pássaro consegue carregar.
+A entrada consiste de uma matriz de caracteres com 8 linhas e 8 colunas, contendo a peça na posição ``a1'', seguida da peça na posição ``b1'' e assim por diante. Depois da matriz, são dadas as coordenadas que indicam a posição da peça inimiga que deve ser capturada. \\
 
 
 \subsection*{Saída}
 
-A saída consiste em uma única linha contendo a string ``Sim'' se é possível salvar o rapaz, ou ``Nao'' caso contrário.
+A saída consiste em uma única linha contendo a string ``Sim'' se é possível capturar a peça ou ``Nao'' caso contrário.
 
 % \textoSaidaPadrao
 
