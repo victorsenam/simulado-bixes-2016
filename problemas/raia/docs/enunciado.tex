@@ -1,18 +1,19 @@
 \section*{Problema \proxLetra: MaratonIME vai a raia}
 \arquivoProblema{raia}
 
-Como todos sabem, os maratonistas são exímios remadores. A raia é um ótimo lugar para se remar, correr e fazer acadêmia. O que poucas pessoas apreciam são as capivaras que moram lá. Capivaras são animais fascinantes! Além de muito bonitas, as capivaras possuem vários comportamentos peculiares. Você sabia que as capivaras podem viver em grupos de até 100 indivíduos?\\
-Numa bela manhã de sol, Yan corria na raia como de costume. Observando as capivaras, percebeu que elas se organizavam numa linha para tomar sol. Cada capivara tinha uma parceira. Cada par era responsável pela segurança de uma região, que começava na capivara $A$ e terminava na capivara $B$, onde a capivara $A$ olhava para a $B$ e vice-versa. Dentro de cada região, as capivaras podiam ter subregiões protegidas da mesma maneira.\\
-Curioso, Yan decidiu representar a organização das capivaras utilizando parênteses, onde `$($' e `$)$' representam capivaras olhando para a direita e para a esquerda, respectivamente. Por exemplo, a sequência $(()())$ indica que existe uma região mais externa que protege duas subregiões internas disjuntas. De tão fascinado, Yan se descuidou e acabou caindo na raia, fazendo uma bagunça com suas representações. Ele conseguiu recuperar algumas, mas agora elas estavam misturadas com outras coisas. Você pode ajudá-lo?
+Como todos sabem, os maratonistas são exímios remadores. A raia é um ótimo lugar para se remar, correr e fazer academia. O que poucas pessoas apreciam são as capivaras que moram lá. Capivaras são animais fascinantes! Além de muito bonitas, as capivaras possuem vários comportamentos peculiares. Você sabia que as capivaras podem viver em grupos de até 100 indivíduos?\\
+Numa bela manhã de sol, Yan corria na raia como de costume. Observando as capivaras, percebeu que elas se organizavam numa linha para tomar sol. Cada capivara estava pareada com somente uma outra. Duas capivaras podem estar pareadas se e somente se ambas se enxergam. Uma capivara enxerga todas as outras na direção que olha. 
+Curioso, Yan decidiu representar as capivaras pelas letras $A$ e $B$, onde $A$ indica que uma capivara está olhando para a direita e $B$ para a esquerda.
+Por exemplo, a sequência $AABABB$ representa capivaras tomando sol pois é possível parear todas as capivaras seguindo as regras descritas. De tão fascinado, Yan se descuidou e acabou caindo na raia, fazendo uma bagunça com suas representações. Ele conseguiu recuperar algumas, mas agora elas estavam misturadas com outras coisas. Você pode ajudá-lo descobrir se uma dada representação é de capivaras tomando sol?
 
 \subsection*{Entrada}
 \textoDiversasInstanciasEOF
 
-Cada instância contém uma sequência $S$ de caracteres, composta apenas por `$($' e `$)$', uma representação de Yan.
+Cada instância contém uma sequência $S$ de caracteres, composta apenas por `$A$' e `$B$', uma representação de Yan.
 
 \subsection*{Saída}
 
-A saída contém uma única linha. Imprima ``Sim'' caso a representação seja uma organização de capivaras ou ``Nao'' caso contrário.
+A saída contém uma única linha. Imprima ``Sim'' caso a representação seja de capivaras tomando sol ou ``Nao'' caso contrário.
 
 % \textoSaidaPadrao
 
