@@ -12,26 +12,23 @@ O maratonIME, além disso, usa um sistema um pouco simplificado de movimentos de
     \item O bispo, representado por ``b'' ou ``B'', consegue capturar qualquer peça que esteja em alguma das diagonais que passam pelo bispo e que seja visivel por ele em uma linha reta, ou seja, 
     \item A rainha, representada por ``r'' ou ``R'', consegue fazer os movimentos da torre e os movimentos do bispo, ou seja, consegue, em um movimento, capturar qualquer peça que tenha alguma coordenada igual à dela ou que esteja em alguma diagonal a qual ela pertence desde que não haja nenhum obstáculo (outra peça) na linha reta entre a rainha e a peça que se quer capturar.
     \item O rei, representado por ``k'' ou ``K'', consegue capturar qualquer um que esteja num quadrado que compartilha um vértice com o quadrado do rei, ou seja, ele consegue capturar alguém que esteja em alguma casa imediatamente vizinha à dele (diagonais inclusas). Assim, um rei na posição ``c4'' pode capturar somente peças nas posições ``b3'', ``b4'', ``b5'', ``c3'', ``c5'', ``d3'', ``d4'' e ``d5''.
+    \item O caractere ``.'' representa uma posição vazia
 \end{itemize}
-Seu programa deve receber uma matriz e a posição da peça inimiga que o Nathan quer capturar e responder ``Sim'' se é possível capturar essa peça com um movimento e ``Não'' caso contrário.
+Seu programa deve receber uma matriz e a posição da peça inimiga que o Nathan quer capturar e responder ``Sim'' se é possível capturar essa peça com um movimento e ``Não'' caso contrário. \\
+É garatido que existe sempre uma peça inimiga na posição dada, é garantido também que cada time contém, no máximo, dois bispos, duas torres, dois cavalos, 8 peões, um rei e uma rainha. \\
 
 
 \subsection*{Entrada}
 \textoDiversasInstanciasEOF
 
-A entrada consiste de uma matriz de caracteres com 8 linhas e 8 colunas, contendo a peça na posição ``a1'', seguida da peça na posição ``b1'' e assim por diante. Depois da matriz, são dadas as coordenadas que indicam a posição da peça inimiga que deve ser capturada. \\
+Cada instância consiste de 8 linhas com 8 caracteres cada. A primeira linha contém os caracteres nas posições ``a1'', ``b1'', \dots, ``b8''. A segunda linha contém os caracteres nas posições ``a2'', ``b2'', \dots, ``b8''. E assim por diante. Depois da matriz, são dadas as coordenadas que indicam a posição da peça inimiga que deve ser capturada. \\
 
 
 \subsection*{Saída}
 
-A saída consiste em uma única linha contendo a string ``Sim'' se é possível capturar a peça ou ``Nao'' caso contrário.
+A saída consiste em uma única linha para cada instância contendo a string ``Sim'' se é possível capturar a peça ou ``Nao'' caso contrário.
 
 % \textoSaidaPadrao
-
-\subsection*{Restrições}
-\begin{itemize}
-  \item $0 \leq p, x, y \leq 10^9$
-\end{itemize}
 
 \subsection*{Exemplos}
 
