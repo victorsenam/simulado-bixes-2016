@@ -1,14 +1,15 @@
 \section*{Problema \proxLetra: MaratonIME pega o circular}
-\arquivoProblema{Exemplo}
+\arquivoProblema{circular}
 
-Para fazer com que a viagem dos alunos ao metrô não seja tão cansativa, a UESP, Universidade do Estado de São Paulo testou uma de suas mais famosas invenções no ônibus da universidade: eles criaram os circulares de Comprimento Interno Infinito! Em tais maravilhas da Engenharia Moderna sempre existam duplas de bancos vazias para que os alunos se sentem e possam conversar um pouco em sua viagem. 
-Os integrantes do MaratonIME são muito populares, tão populares que eles possuem amigos em todos institutos da UESP, e assim como a grande maioria de estudantes desta universidade eles também têm que pegar o circular após um longo dia aprendendo a consertar Wi-Fi. Por não fazerem esportes como, por exemplo, remo, todos os alunos da UESP se sentam logo após entrarem no circular, formando duplinhas sempre que possível. Pensando nisso, Gi, experiente Maratonista, bola um problema pra pensar no caminho ao metrô: Dado um número $n$ que indica quantos institutos estão em uma avenida da UESP, um inteiro $m$ que indica quantas perguntas Gi fará, e $a\textsubscript{i}$, a quantidade de pessoas esperando o Circular no ponto do instituto $i$, para todos os institutos, Gi quer saber, caso entrassem no circular todas as pessoas entre os institutos $j$ e $k$, inclusive, se é possível que niguém tenha que ficar sozinha em um par de bancos, cabe a você respondê-la! 
-Por exemplo: Imagine uma avenida da UESP com $5$ institutos, nos quais temos a seguinte quantidade de pessoas esperando: $1$ $4$ $10$ $3$ e $2$, Gi, cheia de dúvidas, se faz $2$ perguntas: Se é possível formar organizar duplinhas caso o circular passe em todos institutos entre os institutos de índices $3$ e $5$, ou ainda se a mesma distribuição é possível para os índices $2$ e $3$. Para a primeira pergunta temos $15$ pessoas no circular, logo não conseguimos dividir todos em duplinhas, alguém deverá sentar-se sozinho no circular, enquanto que no segundo caso temos $14$ pessoas, conseguimos então criar $7$ duplinhas no ônibus e não deixar ninguém só.
+Para fazer com que a viagem dos alunos ao metrô não seja tão cansativa, a UESP, Universidade do Estado de São Paulo testou uma de suas mais famosas invenções no ônibus da universidade: eles criaram os circulares de Comprimento Interno Infinito! Em tais maravilhas da Engenharia Moderna sempre existam duplas de bancos vazias para que os alunos se sentem e possam conversar um pouco em sua viagem.
+ 
+Os integrantes do MaratonIME são muito populares, tão populares que eles possuem amigos em todos institutos da UESP, e assim como a grande maioria de estudantes desta universidade eles também têm que pegar o circular após um longo dia aprendendo a consertar Wi-Fi. Por não fazerem esportes como, por exemplo, remo, todos os alunos da UESP se sentam logo após entrarem no circular, formando duplinhas sempre que possível. Pensando nisso, Gi, experiente Maratonista, bola um problema para pensar no caminho ao metrô: dado um número $n$ que indica quantos institutos estão em uma avenida da UESP, um inteiro $m$ que indica quantas perguntas Gi fará, e $a_i$, a quantidade de pessoas esperando o Circular no ponto do instituto $i$, para todos os institutos, Gi quer saber, caso entrassem no circular todas as pessoas entre os institutos $j$ e $k$, inclusive, se é possível que niguém tenha que ficar sozinha em um par de bancos, cabe a você respondê-la! 
+
 
 \subsection*{Entrada}
 \textoDiversasInstanciasEOF
 
-A entrada consiste em uma linha contendo dois inteiros $n$ e $m$, o número de institutos e o número de perguntas de Gi, seguido de $n$ inteiros $a\textsubscript{i}$, a quantidade de pessoas esperando nos pontos de ônibus dos institutos, e, após isso, $m$ linhas com dois inteiros $j$ e $k$ dizendo os institutos inicial e final pelo qual o circular passaria.
+A entrada consiste em uma linha contendo dois inteiros $n$ e $m$, o número de institutos e o número de perguntas de Gi, seguido de $n$ inteiros $a_i$, a quantidade de pessoas esperando nos pontos de ônibus dos institutos, e, após isso, $m$ linhas com dois inteiros $j$ e $k$ dizendo os institutos inicial e final pelo qual o circular passaria.
 
 
 \subsection*{Saída}
@@ -20,11 +21,13 @@ A saída consiste em uma única linha contendo a string ``Sim'' se é possível 
 \subsection*{Restrições}
 \begin{itemize}
 	\item $1 \leq n, m \leq 10^5$
-	\item $0 \leq a\textsubscript{i} \leq 10^5$
+	\item $0 \leq a_i \leq 10^5$
 	\item $1 \leq i, j, k \leq n$
 \end{itemize}
 
 \subsection*{Exemplos}
-\begin
 
 \exemplo{tests/in1}{tests/out1}
+
+\subsection*{Notas}
+No primeiro exemplo temos uma avenida da UESP com $5$ institutos, nos quais temos a seguinte quantidade de pessoas esperando: $1$ $4$ $10$ $3$ e $2$. Gi, cheia de dúvidas, se faz $2$ perguntas: se é possível formar organizar duplinhas caso o circular passe em todos institutos entre os institutos de índices $3$ e $5$, ou ainda se a mesma distribuição é possível para os índices $2$ e $3$. Para a primeira pergunta temos $15$ pessoas no circular, logo não conseguimos dividir todos em duplinhas, alguém deverá sentar-se sozinho no circular, enquanto que no segundo caso temos $14$ pessoas, conseguimos então criar $7$ duplinhas no ônibus e não deixar ninguém só.
