@@ -1,31 +1,33 @@
-\section*{Problema \proxLetra: MaratonIME faz alguma coisa}
-\arquivoProblema{Exemplo}
+\section*{Problema \proxLetra: MaratonIME Volta para o alojamento}
+\arquivoProblema{volta}
 
-Dois pássarinho voavam pelo lindo céu azul da Austrália quando encontraram um dos membros do MaratonIME preso em uma árvore. Ele gritava ``Me ajudem, ganhei tantos balões durante o simulado que comecei a voar e acabei preso aqui, vocês poderiam me ajudar a descer?''. Os pássaros pensaram e refletiram quais opções eles tinham naquele estranho momento:
-
-\begin{itemize}
-	\item ``Podemos rir e ir embora, mas ele pode tentar agredir a gente com um balão.''
-	\item ``Podemos ajudar e pedir comida em troca (além de metade de seus balões).''
-\end{itemize}
-
-Após muitas considerações, os pássaros decidiram ajudar o pobre maratonista, mas havia um problema: será que eles conseguiriam suportar o peso do rapaz? Sua função é dado o peso do competidor e quanto cada pássaro consegue carregar, dizer se eles conseguem trazer o maratonista para a terra. Os pássaros conseguem trazer o competidor se as somas dos valores que cada um consegue carregar for maior ou igual que o seu peso. 
-
-
+Muito frequentado pelo maratonistas mais tradicionais, o acampamento de verão é muito conhecido por suas festas nababescas. Contudo após as festas os competidores sempre devem voltar para seus respectivos alojamentos. Essa volta nem sempre é tranquila, os competidores não muito sóbrios acabam andando em zig-zague e muitas vezes perdendo ou achando dinheiro, além de serem roubados no caminho. O MaratonIME entretanto sempre tem um membro sóbrio em seu grupo, o que garante que eles não vão perder dinheiro no caminho a não ser que sejam roubados. Voltando para o alojamento o MaratonIME sabe que podem ligar para seu coach, Renzo, que irá buscá-los instantâneamente. Entretando eles querem a sua ajuda para escrever um programa que, sabendo o caminho, diga qual é o Máximo de dinheiro que é possível levar para o alojamento.\\
+\\
+Então sua tarefa será escrever um programa que dado um grid N por M e sabendo que os membros do MaratonIME andam em zig-zague quando bêbados diga qual é o máximo de dinheiro que é possível levar para o alojamento. Deve se levar em consideração os seguintes fatos:\\
+\\
+1. Os membros do MaratonIME saem da festa e chegam na rua pelo ponto superior esquerdo e começam andando para a direita.\\
+2. Os membros do MaratonIME saem completamente sem dinheiro da festa.\\
+3. Sempre ao chegar ao fim da rua eles descem um ponto e andam na direção contrária.\\
+4. Sempre que encontram um ladrão no caminho, este lhes roubam todo o dinheiro acumulado.\\
+5. Eles podem ligar para Renzo a qualquer momento, e Renzo irá busca-los instantâneamente.\\
+\\
 \subsection*{Entrada}
 \textoDiversasInstanciasEOF
 
-A entrada consiste em uma única linha contendo um inteiro $p$, o peso do rapaz, seguido de dois inteiros $x$ e $y$, o quanto cada pássaro consegue carregar.
-
+A enxtrada consiste de dois inteiros, N e M, indicando respectivamente o tamanho da rua e a largura dela, seguidos por N linhas contendo M caracteres que podem ser:\\
+\\
+- \'\_\'  indicando que não há nada naquele ponto da rua.\\
+- \'.\'  indicando que há uma moeda de um real naquele ponto da rua.\\
+- \'L\'  indicando que há um ladrão naquele ponto da rua.\\
 
 \subsection*{Saída}
 
-A saída consiste em uma única linha contendo a string ``Sim'' se é possível salvar o rapaz, ou ``Nao'' caso contrário.
-
+A saída consiste de um único inteiro indicando o máximo de dinheiro que MaratonIME pode trazer para o alojamento.\\
 % \textoSaidaPadrao
 
 \subsection*{Restrições}
 \begin{itemize}
-  \item $0 \leq p, x, y \leq 10^9$
+  \item $1 \leq N,M \leq 10^3 $
 \end{itemize}
 
 \subsection*{Exemplos}
