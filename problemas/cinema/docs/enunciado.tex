@@ -1,33 +1,68 @@
-\section*{Problema \proxLetra: MaratonIME faz alguma coisa}
-\arquivoProblema{Exemplo}
+\section*{Problema \proxLetra: MaratonIME vai ao cinema}
+\arquivoProblema{cinema}
 
-Dois pássarinho voavam pelo lindo céu azul da Austrália quando encontraram um dos membros do MaratonIME preso em uma árvore. Ele gritava ``Me ajudem, ganhei tantos balões durante o simulado que comecei a voar e acabei preso aqui, vocês poderiam me ajudar a descer?''. Os pássaros pensaram e refletiram quais opções eles tinham naquele estranho momento:
+Acredite se quiser, estudos indicam que não é apenas de maratona que vive o MaratonIME. 
 
-\begin{itemize}
-	\item ``Podemos rir e ir embora, mas ele pode tentar agredir a gente com um balão.''
-	\item ``Podemos ajudar e pedir comida em troca (além de metade de seus balões).''
-\end{itemize}
+Num sábado, depois de simular uma prova, nossa turma de heróis resolveu ir aproveitar
+a tarde numa sessão de cinema. Mas eles não escolheram ir a um cinema qualquer, mas sim
+ir assistir um filme $n$-D, ou seja, com $n$ dimensões.
 
-Após muitas considerações, os pássaros decidiram ajudar o pobre maratonista, mas havia um problema: será que eles conseguiriam suportar o peso do rapaz? Sua função é dado o peso do competidor e quanto cada pássaro consegue carregar, dizer se eles conseguem trazer o maratonista para a terra. Os pássaros conseguem trazer o competidor se as somas dos valores que cada um consegue carregar for maior ou igual que o seu peso. 
+Em certa cena do filme, durante uma perseguição, o personagem principal pulou por cima
+de uma corrente de estacionamento. É óbvio que no filme este ato foi feito de forma 
+casual e atlética, mas isto deixou Yan furioso.
 
+``Hollywood fica fazendo essas coisas parecerem fáceis, mas é muito difícil pular por
+cima de uma corrente!''
+
+O resto da turma, após o filme, argumentou com Yan que o ator com certeza pulou por cima
+da corrente, e este discordou, afirmando que só podia ser um truque de câmera,ou efeitos
+especiais.
+
+Para provar seu ponto, ele comprou outro ingresso para o filme e levou instrumentos de
+medição muito precisos para a sala. O plano de Yan era mostrar que a distância do pé do
+ator ao chão era menor que a distância da corrente ao chão, o que provaria que o ator
+de fato não pulou a corrente.
+
+Mas as contas em $n$ dimensões são complicadas. Todo mundo sabe que a distância no plano
+entre dois pontos $(x_0,y_0)$ e  $(x_1,y_1)$ é dada por
+\[ \sqrt{(x_0-x_1)^2 + (y_0-y_1)^2}\]
+Muita gente também sabe que a distância entre dois pontos $(x_0,y_0,z_0)$ e $(x_1,y_1,z_1)$
+no espaço tridimensional é calculada pela fórmula
+\[\sqrt{(x_0-x_1)^2 + (y_0-y_1)^2 + (z_0-z_1)^2}\]
+
+Ambas as fórmulas descrevem a chamada distância euclideana, no caso bi e tri-dimensional.
+Seu trabalho aqui é, dado três pontos em $n$ dimensões, dizer se o par mais próximo é o
+entre o pé e o chão, ou entre o chão e a corrente, de acordo com a distância euclideana.
 
 \subsection*{Entrada}
 \textoDiversasInstanciasEOF
 
-A entrada consiste em uma única linha contendo um inteiro $p$, o peso do rapaz, seguido de dois inteiros $x$ e $y$, o quanto cada pássaro consegue carregar.
+A entrada começa com um inteiro $n$, $0 < n \leq 10^5$, e depois três linhas, cada uma
+representando um ponto num espaço $n$-dimensional.
 
+A segunda  linha representa as coordenadas do \textbf{chão}, e consiste de $n$ inteiros $a_i$.
+A terceira linha representa as coordenadas do \textbf{pé do mocinho}, e consiste de $n$ inteiros $b_i$.
+A quarta   linha representa as coordenadas da \textbf{corrente}, e consiste de $n$ inteiros $c_i$.
 
 \subsection*{Saída}
 
-A saída consiste em uma única linha contendo a string ``Sim'' se é possível salvar o rapaz, ou ``Nao'' caso contrário.
+Imprima quem está certo nesta história toda, ou seja, imprima ``Yan'' se a distância do
+chão pro pé do mocinho é \textbf{menor ou igual} a distância do chão pra corrente, ou
+imprima ``MaratonIME'' se a corrente estiver mais próxima.
 
 % \textoSaidaPadrao
 
 \subsection*{Restrições}
 \begin{itemize}
-  \item $0 \leq p, x, y \leq 10^9$
+  \item Para todo $i$, $|a_i| \leq 10^4$
+  \item Para todo $i$, $|b_i| \leq 10^4$
+  \item Para todo $i$, $|c_i| \leq 10^4$
 \end{itemize}
 
 \subsection*{Exemplos}
 
+\begin{center}
 \exemplo{tests/in1}{tests/out1}
+
+\exemplo{tests/in2}{tests/out2}
+\end{center}
