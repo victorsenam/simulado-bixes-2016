@@ -1,31 +1,38 @@
-\section*{Problema \proxLetra: MaratonIME faz alguma coisa}
-\arquivoProblema{Exemplo}
+\section*{Problema \proxLetra: MaratonIME vai ao japonês (de novo)}
+\arquivoProblema{japones}
 
-Dois pássarinho voavam pelo lindo céu azul da Austrália quando encontraram um dos membros do MaratonIME preso em uma árvore. Ele gritava ``Me ajudem, ganhei tantos balões durante o simulado que comecei a voar e acabei preso aqui, vocês poderiam me ajudar a descer?''. Os pássaros pensaram e refletiram quais opções eles tinham naquele estranho momento:
+Depois de um longo dia com muito treino, os membros do MaratonIME decidiram ir no restaurante japonês. Sim, nós amamos comida japonesa.
 
-\begin{itemize}
-	\item ``Podemos rir e ir embora, mas ele pode tentar agredir a gente com um balão.''
-	\item ``Podemos ajudar e pedir comida em troca (além de metade de seus balões).''
-\end{itemize}
+Depois de inúmeras barcas de sushi, quando todos já estavam mais que satisfeitos, eles pediram ao sushiman Sussuchi uma última barca. Desafiado, ele respondeu:
 
-Após muitas considerações, os pássaros decidiram ajudar o pobre maratonista, mas havia um problema: será que eles conseguiriam suportar o peso do rapaz? Sua função é dado o peso do competidor e quanto cada pássaro consegue carregar, dizer se eles conseguem trazer o maratonista para a terra. Os pássaros conseguem trazer o competidor se as somas dos valores que cada um consegue carregar for maior ou igual que o seu peso. 
+-- Vocês querem \textsc{mais uma} barca? Vocês terão mais uma barca...
 
+A barca que ele trouxe foi a maior que qualquer maratonista já tinha visto. Alguns dizem que foi a maior barca que já existiu, superando o limite anterior de $10^5$ sushis conquistado pela sushiwoman Gioza em 742, em um festival para o monarca da época, Carlos-sama.
+
+Apesar disso, os maratonistas aceitaram o desafio, e conseguiram comer todos os sushis. Depois, estes estavam tão cheios que não aturavam nem tocar uns aos outros. Tendo comido muita comida, os maratonistas estão desnorteados. Ajude-os a descobrir quais pares de amigos estão se tocando, para que possam se afastar.
+
+Os maratonistas são modelados como círculos num plano, e dois maratonistas se tocam se os seus círculos se tocam. É garantido que nenhum par de círculos se intersecta propriamente, ou seja, a área de sua intersecção é nula.
 
 \subsection*{Entrada}
-\textoDiversasInstanciasEOF
 
-A entrada consiste em uma única linha contendo um inteiro $p$, o peso do rapaz, seguido de dois inteiros $x$ e $y$, o quanto cada pássaro consegue carregar.
+Na primeira linha, um único inteiro $n$ indicando o número de maratonistas.
 
+Cada uma das próximas $n$ linhas tem três inteiros $x_i$, $y_i$ e $r_i$, a $(i + 1)$-ésima linha descreve o $i$-ésimo maratonista. $(x_i, y_i)$ são as coordenadas do centro do círculo, e $r_i$ seu raio.
+
+É garantido que a intersecção de qualquer par de círculos tem área nula.
 
 \subsection*{Saída}
 
-A saída consiste em uma única linha contendo a string ``Sim'' se é possível salvar o rapaz, ou ``Nao'' caso contrário.
+Para cada par de círculos que se tocam, imprima em uma linha os índices desses círculos. As colisões podem ser impressas em qualquer ordem, os índices dos dois círculos podem ser impressos em qualquer ordem também.
 
-% \textoSaidaPadrao
+Não imprima as colisões mais de uma vez, ou seja, se $i$ se intersecta com $j$, imprima $i$  $j$ ou $j$ $i$, mas não ambos.
+
 
 \subsection*{Restrições}
 \begin{itemize}
-  \item $0 \leq p, x, y \leq 10^9$
+  \item $2 \leq n \leq 2000$
+  \item $-10^4 \leq x_i, y_i \leq 10^4$
+  \item $1 \leq r_i \leq 200$
 \end{itemize}
 
 \subsection*{Exemplos}
