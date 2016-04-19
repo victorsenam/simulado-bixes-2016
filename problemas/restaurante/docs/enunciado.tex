@@ -1,33 +1,63 @@
-\section*{Problema \proxLetra: MaratonIME faz alguma coisa}
-\arquivoProblema{Exemplo}
+\section*{Problema \proxLetra: MaratonIME vai ao restaurante japonês}
+\arquivoProblema{restaurante}
 
-Dois pássarinho voavam pelo lindo céu azul da Austrália quando encontraram um dos membros do MaratonIME preso em uma árvore. Ele gritava ``Me ajudem, ganhei tantos balões durante o simulado que comecei a voar e acabei preso aqui, vocês poderiam me ajudar a descer?''. Os pássaros pensaram e refletiram quais opções eles tinham naquele estranho momento:
+Nathan e Yan são programadores de todo coração. Eles aplicam seus
+conhecimentos de algoritmos em contextos que transcendem a maratona,
+otimizando as coisas mais triviais do dia a dia.
 
-\begin{itemize}
-	\item ``Podemos rir e ir embora, mas ele pode tentar agredir a gente com um balão.''
-	\item ``Podemos ajudar e pedir comida em troca (além de metade de seus balões).''
-\end{itemize}
+Alguns questionam se eles só não são meio malucos mesmos, e se não 
+era melhor apenas fazer o que precisava ser feito.
 
-Após muitas considerações, os pássaros decidiram ajudar o pobre maratonista, mas havia um problema: será que eles conseguiriam suportar o peso do rapaz? Sua função é dado o peso do competidor e quanto cada pássaro consegue carregar, dizer se eles conseguem trazer o maratonista para a terra. Os pássaros conseguem trazer o competidor se as somas dos valores que cada um consegue carregar for maior ou igual que o seu peso. 
+De qualquer forma, eventualmente rolam conflitos quando as abordagens
+deles divergem sobre o que deve ser feito. Isso rola quando eles vão
+em restaurantes japoneses.
 
+Todo mundo sabe que o objetivo, num rodízio, é comer a maior quantidade
+de comidas distintas. Nathan e Yan diferem na abordagem. Cada um aplica
+um algoritmo e diz que o dele é o que garante que haverá mais iguarias
+diferentes sendo devoradas.
 
+Nathan sempre come o prato que estiver mais fresco na mesa, ou seja,
+o que chegou mais recentemente. Em caso de empate, ele prefere o prato
+que ele comeria mais rápido.
+
+Yan respeita metodicamente a ordem de chegada dos alimentos, e, em
+caso de empate, também prefere o que ele comeria mais rápido.
+
+Dado o momento de chegada dos pratos, quanto tempo cada um leva pra comer,
+e quanto tempo eles ficarão no restaurante, diga qual dos dois vai degustar
+mais pratos diferentes, ou se haverá empate.
 \subsection*{Entrada}
 \textoDiversasInstanciasEOF
 
-A entrada consiste em uma única linha contendo um inteiro $p$, o peso do rapaz, seguido de dois inteiros $x$ e $y$, o quanto cada pássaro consegue carregar.
+A primeira linha da entrada tem dois inteiros: $0 < n \leq 10^5$, que representa
+quantos pratos serão servidos, e $0 < T \leq 10^6$, que representa quantos
+minutos eles vão ficar no restaurante.
 
+Depois seguem $n$ linhas, cada uma com dois inteiros $t_i$ e $c_i$, que
+representam em minutos, respectivamente, o tempo que demora pra comer 
+aquele prato e o momento da chegada dele.
+
+Você pode assumir que todos os $c_i$ serão dados em ordem não decrescente, ou
+seja, que para todo $i$ vale $c_i \leq c_{i+1}$.
 
 \subsection*{Saída}
 
-A saída consiste em uma única linha contendo a string ``Sim'' se é possível salvar o rapaz, ou ``Nao'' caso contrário.
+Imprima ``Nathan'', ``Yan'' ou ``Empate'', respondendo a pergunta sobre
+pratos distintos.
 
 % \textoSaidaPadrao
 
 \subsection*{Restrições}
 \begin{itemize}
-  \item $0 \leq p, x, y \leq 10^9$
+    \item Para todo $i$, vale que $0 \leq c_i \leq 100$
+    \item Para todo $i$, vale que $0 \leq t_i \leq 10^6$
 \end{itemize}
 
 \subsection*{Exemplos}
-
 \exemplo{tests/in1}{tests/out1}
+
+\subsection*{Notas}
+Repare que o atendimento em alguns restaurantes é muito ruim, e a comida
+pode acabar só chegando depois que o MaratonIME já foi embora de barriga
+cheia.
