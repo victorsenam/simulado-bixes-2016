@@ -1,33 +1,44 @@
-\section*{Problema \proxLetra: MaratonIME faz alguma coisa}
-\arquivoProblema{Exemplo}
+\section*{Problema \proxLetra: MaratonIME ajuda Pablito}
+\arquivoProblema{pablito}
 
-Dois pássarinho voavam pelo lindo céu azul da Austrália quando encontraram um dos membros do MaratonIME preso em uma árvore. Ele gritava ``Me ajudem, ganhei tantos balões durante o simulado que comecei a voar e acabei preso aqui, vocês poderiam me ajudar a descer?''. Os pássaros pensaram e refletiram quais opções eles tinham naquele estranho momento:
+Como toda pessoa culta e letrada sabe, os ratos são os seres mais inteligentes
+do planeta. Os golfinhos são os segundos.
 
-\begin{itemize}
-	\item ``Podemos rir e ir embora, mas ele pode tentar agredir a gente com um balão.''
-	\item ``Podemos ajudar e pedir comida em troca (além de metade de seus balões).''
-\end{itemize}
+O MaratonIME sabe da hierarquia entre as espécies, e a utiliza em seu favor.
+Em geral, quando eles precisam de recurso, eles sabem que é sempre bom ter um
+inteligente rato auxiliando. Mas os ratos não sentem muita empatia por nós,
+primatas, e só nos ajudam se eles nos devem favores.
 
-Após muitas considerações, os pássaros decidiram ajudar o pobre maratonista, mas havia um problema: será que eles conseguiriam suportar o peso do rapaz? Sua função é dado o peso do competidor e quanto cada pássaro consegue carregar, dizer se eles conseguem trazer o maratonista para a terra. Os pássaros conseguem trazer o competidor se as somas dos valores que cada um consegue carregar for maior ou igual que o seu peso. 
+Assim, o MaratonIME decidiu ajudar o ratinho Pablito. Pablito está estudando a
+genealogia dos ratos, para facilitar clonagem e mapeamento genômico. Felizmente,
+parte do trabalho já está feita pela forma com a qual os ratos se identificam.
 
+A sociedade dos ratos, historicamente, se organiza de forma matriarcal. No princípio,
+cada Matriarca foi identificada com um número que só é divisível por 1 e por ele mesmo.
+Era a chamada era primordial, dos primeiros ratos, primário da civilização.
+
+Os demais ratos são sempre descendentes dessa linhagem. Assim, cada um deles é
+identificado com o produto da identidade de seus pais, e tudo está bem definido.
+
+Pablito precisa, dado dois ratos, saber se eles tem algum descendente em comum.
+Sua única ferramenta é número de identificação de cada ratinho, que é sempre um
+inteiro positiva com no máximo 16 dígitos.
+
+Crie um programa que diz se o par de ratos que tem aquela identificação tem algum
+antecessor em comum.
 
 \subsection*{Entrada}
 \textoDiversasInstanciasEOF
 
-A entrada consiste em uma única linha contendo um inteiro $p$, o peso do rapaz, seguido de dois inteiros $x$ e $y$, o quanto cada pássaro consegue carregar.
+A entrada começa com um inteiro positivo $t \leq 10^6$.
 
-
+Depois seguem $t$ linhas, cada uma com dois inteiros de identificação dos ratinhos.
 \subsection*{Saída}
 
-A saída consiste em uma única linha contendo a string ``Sim'' se é possível salvar o rapaz, ou ``Nao'' caso contrário.
+Para cada linha, responda ``Sim'' se os ratinhos tem um parente em comum,
+e ``Não'', caso contrário.
 
 % \textoSaidaPadrao
 
-\subsection*{Restrições}
-\begin{itemize}
-  \item $0 \leq p, x, y \leq 10^9$
-\end{itemize}
-
 \subsection*{Exemplos}
-
 \exemplo{tests/in1}{tests/out1}
