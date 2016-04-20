@@ -34,14 +34,11 @@
 
 \newcommand{\insereArquivo}[1]{\VerbatimInput[xleftmargin=0mm,numbers=none,obeytabs=true]{\PASTA/#1}}
 
-\newcommand{\textoDiversasInstancias}{A entrada é composta por
-diversas instâncias. A primeira linha da entrada contém um inteiro~$T$
-indicando o número de instâncias. }
-\newcommand{\textoDiversasInstanciasEOF}{A entrada é composta por
-  diversas instâncias e termina com final de arquivo (\texttt{EOF}).}
+\newcommand{\memoriaProblema}[1]{\vspace{-0.3cm} \noindent {\em
+Memory Limit per test: \texttt{#1 megabytes} \\}}
 
-\newcommand{\arquivoProblema}[1]{\vspace{-0.3cm} \noindent {\em
-Arquivo: \texttt{#1.[c|cpp|java|py]} \\}}
+\newcommand{\tempoProblema}[1]{\vspace{-0.3cm} \noindent {\em
+Time Limit per test: \texttt{#1 seconds} \\}}
 
 \newcommand{\textoSaidaPadrao}{\vspace{0.2cm} \noindent \emph{A
 saída deve ser escrita na saída padrão.}}
@@ -92,7 +89,7 @@ entrada deve ser lida da entrada padrão.}}
 
 \begin{Huge}
   % {\bf $1^{\underline{o}}$ Simulado para ingressantes 2015}
-  {\bf II Simulado para Ingressantes 2016}
+  {\bf II Simulado para Ingressantes}
 \end{Huge}
 
 \vspace{6.0cm}
@@ -124,24 +121,11 @@ Quinta-feira, 28 de abril de 2016.
 
 \begin{itemize}
 	\item A competição tem duração de 5 horas;
-	\item Faltando 1 hora para o término da competição, o placar será congelado, ou seja, o placar 
-	não será mais atualizado;
-	\item Faltando 15 minutos para o término da competição, os times não receberão mais a resposta
-	de suas submissões.
-\end{itemize}
-
-\vspace*{0.5cm}
-
-\begin{itemize}
 	\item A entrada de cada problema deve ser lida da entrada padrão (teclado);
 	\item A saída de cada problema deve ser escrita na saída padrão (tela);
 	\item Siga o formato apresentado na descrição da saída, caso contrário não é garantido que seu
 	código será aceito;
 	\item Na saída, toda linha deve terminar com o caracter `\texttt{\textbackslash n}';
-	\item O nome do arquivo de códigos em Java deve ser \textbf{exatamente} como indicado abaixo
-	do nome de cada problema. Para C/C++ é recomendado usar o nome indicado;
-	\item Para códigos em Java, o nome da classe principal deve ser \textbf{igual} ao nome do
-	arquivo.
 \end{itemize}
 
 \vspace*{1.0cm}
@@ -152,9 +136,7 @@ Quinta-feira, 28 de abril de 2016.
 		\hline
 		\multicolumn{3}{|c|}{Respostas das submissões}\\
 		\hline
-		Not answered yet & \multicolumn{1}{|c|}{-} & Paciência\\
-		\hline
-		YES & \multicolumn{1}{|c|}{-} & Código aceito. Parabéns!\\
+		Accepted & \multicolumn{1}{|c|}{-} & Código aceito. Parabéns!\\
 		\hline
 		\multirow{11}{*}{NO} & Compilation error & Erro de compilação\\
 		\cline{2-3}
@@ -166,19 +148,10 @@ Quinta-feira, 28 de abril de 2016.
 		 & \multirow{2}{*}{Runtime error} & 
 		Erro em tempo de execução (ex.: \textit{segmentation fault})\\
 		\cline{2-3}
-		 & Problem name mismatch & Leia as duas últimas instruções\\
-		\cline{2-3}
-		 & \multirow{2}{*}{Presentation error} & Não está imprimindo no formato 
-		exigido no enunciado\\
-		\cline{2-3}
-		 & \multirow{2}{*}{If possible, contact staff} & 
-		Não sei, você conseguiu fazer algo inesperado\\
 		\hline
 	\end{tabular}
 \end{center}
 \renewcommand{\arraystretch}{1.0}
-
-
 
 \newpage
 
@@ -190,14 +163,14 @@ Quinta-feira, 28 de abril de 2016.
 \incluir{../problemas/aula/docs}{enunciado.tex} \clearpage
 \incluir{../problemas/cinema/docs}{enunciado.tex} \clearpage
 \incluir{../problemas/circular/docs}{enunciado.tex} \clearpage
-\incluir{../problemas/japones/docs}{enunciado.tex} \clearpage
+\incluir{../problemas/restaurante/docs}{enunciado.tex} \clearpage
 \incluir{../problemas/karaoke/docs}{enunciado.tex} \clearpage
 \incluir{../problemas/kart/docs}{enunciado.tex} \clearpage
 \incluir{../problemas/nim/docs}{enunciado.tex} \clearpage
 \incluir{../problemas/pablito/docs}{enunciado.tex} \clearpage
 \incluir{../problemas/perdido/docs}{enunciado.tex} \clearpage
 \incluir{../problemas/raia/docs}{enunciado.tex} \clearpage
-\incluir{../problemas/restaurante/docs}{enunciado.tex} \clearpage
 \incluir{../problemas/xadrez/docs}{enunciado.tex} \clearpage
+\incluir{../problemas/japones/docs}{enunciado.tex} \clearpage
 
 \end{document}
