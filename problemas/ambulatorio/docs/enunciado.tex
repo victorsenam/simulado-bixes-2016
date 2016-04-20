@@ -2,15 +2,14 @@
 \arquivoProblema{jogo}
 
 Os membros do MaratonIME adoram se divertir, gostam tanto que inventaram um jogo e o nomearam ``Cîrokime''. O jogo funciona da seguinte forma:\newline 
-Primeiro $n$ copos com \textit{Cîroc\footnote{Cîroc é uma marca de vodka feita na França, conhecida por seu alto preço de venda no mercado.}} são enfileirados em uma linha, à frente de cada copo $i$ é escrito um número $a_i$. É garantido que, se existem dois copos $i$ e $j$ com $i < j$ então $a_i < a_j$, além disso não existe $i \neq j$ tal que $a_i = a_j$. Em seguida os números são cobertos e o jogo começa.
+Primeiro $n$ copos com \textit{Cîroc\footnote{Cîroc é uma marca de vodka feita na França, conhecida por seu alto preço de venda no mercado.}} são enfileirados em uma linha, à frente de cada copo $i$ é escrito um número $a_i$. É garantido que, para todo $ 1 \leq i < n$ temos que $a_i < a_(i + 1)$. Em seguida os números são cobertos e o jogo começa.
 O jogador deve então achar o copo que possui um determinado número $x$, é garatindo que tal copo existe. Para isso ele deve escolher um copo $i$ e beber a bebida, em seguida o seu número $a_i$ é revelado e se for igual ao valor $x$ o jogo encerra, caso contrário, o jogador deve escolher outro copo e assim por diante. 
 
 ``Cîrokime'' é uma tradição entre os membros do MaratonIME, eles jogam em toda festa\footnote{Balalaika serve.}. Na última festa, Sussu ficou em último lugar, teve que beber os $n$ copos e só no fim encontrou o copo certo. Além de ter ficado em último lugar, Sussu passou mal por ter bebido tanto e teve que ser carregado para casa\footnote{História baseada em fatos reais.}. Mas a próxima festa está marcada e Sussu quer recuperar sua dignidade, para isso ele quer saber, no pior caso, qual o número máximo de copos que ele terá que beber se jogar de forma ótima.
 
 \subsection*{Entrada}
-\textoDiversasInstanciasEOF
 
-A entrada consiste em duas linhas. Na primeira, um inteiro $n$, o número de copos. A segunda contém $n$ inteiros $a_i$ com $1 \leq i \leq n$, os valores escondidos em cada copo.
+A entrada consiste em duas linhas. Na primeira, um inteiro $n$, o número de copos. A segunda contém $n$ inteiros $a_i$ com $1 \leq i \leq n$, em ordem crescente, os valores escondidos em cada copo.
 
 
 \subsection*{Saída}
@@ -21,11 +20,14 @@ A saída consiste em uma única linha contendo um único inteiro: o número mín
 
 \subsection*{Restrições}
 \begin{itemize}
-  \item $1 \leq n \leq 10^9$
-  \item $1 \leq a_i \leq 10^9$ com $1 \leq i \leq n$
+  \item $1 \leq n \leq 10^5$
+  \item Para todo $i$, $1 \leq a_i \leq 10^9$
 \end{itemize}
 
 \subsection*{Exemplos}
 
+\begin{center}
 \exemplo{tests/in1}{tests/out1}
+\exemplo{tests/in2}{tests/out2}
+\end{center}
 

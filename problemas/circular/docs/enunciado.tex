@@ -1,12 +1,13 @@
 \section*{Problema \proxLetra: MaratonIME pega o circular}
 \arquivoProblema{circular}
 
+\epigraph{Se organizar direitinho, ...}{\textsc{Desconhecido}}
+
 Para fazer com que a viagem dos alunos ao metrô não seja tão cansativa, a UESP, Universidade do Estado de São Paulo testou uma de suas mais famosas invenções no ônibus da universidade: eles criaram os circulares de Comprimento Interno Infinito! Em tais maravilhas da Engenharia Moderna sempre existam duplas de bancos vazias para que os alunos se sentem e possam conversar um pouco em sua viagem.
  
 Os integrantes do MaratonIME são muito populares, tão populares que eles possuem amigos em todos institutos da UESP, e assim como a grande maioria de estudantes desta universidade eles também têm que pegar o circular após um longo dia aprendendo a consertar Wi-Fi. Por não fazerem esportes como, por exemplo, remo, todos os alunos da UESP se sentam logo após entrarem no circular, formando duplinhas sempre que possível. Pensando nisso, Gi, experiente Maratonista, bola um problema para pensar no caminho ao metrô: dado um número $n$ que indica quantos institutos estão em uma avenida da UESP e $n$ inteiros $a_i$ que representam a quantidade de pessoas esperando o Circular no ponto do instituto $i$. Gi quer resolver o mesmo problema várias vezes pra cada avenida, mais especificamente $m$ vezes. Mas é sem graça resolver exatamente o mesmo problema, então, ela pensa em $m$ pares de inteiros. Para todo par $l_j$, $r_j$ ela quer saber se caso todas as pessoas que estão esperando em qualquer ponto entre $l_j$ e $r_j$ (inclusive) entrassem num ônibus vazio, seria possível ninguém ficar sozinho num par de bancos, ou seja, todas as pessoas que entraram iriam conseguir ficar sentadas com uma duplinha.
 
 \subsection*{Entrada}
-\textoDiversasInstanciasEOF
 
 A entrada consiste em uma linha contendo dois inteiros $n$ e $m$, o número de institutos e o número de perguntas de Gi. Depois disso, seguem-se $n$ inteiros $a_i$, a quantidade de pessoas esperando nos pontos de ônibus de cada instituto e, após isso, $m$ linhas com dois inteiros cada, $l_i$ e $r_i$, dizendo os institutos inicial e final contidos na pergunta da Gi.
 
@@ -20,8 +21,8 @@ A saída consiste em uma única linha contendo a string ``Sim'' se é possível 
 \subsection*{Restrições}
 \begin{itemize}
 	\item $1 \leq n, m \leq 10^5$
-	\item $0 \leq a_i \leq 10^5 \forall 1 < i \leq n$
-	\item $1 \leq l_j \leq r_j \leq n \forall 1 < j \leq m$
+	\item Para todo $i$, $0 \leq a_i \leq 10^5$
+	\item Para todo $i$, $1 \leq l_i \leq r_i \leq n$
 \end{itemize}
 
 \subsection*{Exemplos}

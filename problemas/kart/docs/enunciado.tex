@@ -1,21 +1,20 @@
 \section*{Problema \proxLetra: MaratonIME vai ao kart}
 \arquivoProblema{kart}
 
-Certo dia após um contest, os maratonistas sentiam-se cabisbaixos por conta de resultados ruins. Vendo a situação, Renzo sugeriu que fizessem algo divertido para descontrair a cabeça. Após discussão fervorosa, decidiram correr de kart. Na procura de um kartódromo que fosse viável para todos, acharam o Kartforces, um kartódromo próximo à Cidade Universitária. Entretanto, a pista era muito pequena e comportava apenas dois corredores por bateria. Como bons maratonistas apaixonados por competição, montaram um torneio justo onde todos corriam contra todos, dois a dois, uma única vez. Em cada corrida, o vencedor somava um ponto no placar. Empates são admitidos. O grande campeão foi o maior pontuador. Sabe-se que $N$ maratonistas estavam presentes e:
+Certo dia após um contest, os maratonistas sentiam-se cabisbaixos por conta de resultados ruins. Vendo a situação, Renzo sugeriu que fizessem algo divertido para descontrair a cabeça. Após discussão fervorosa, decidiram correr de kart. Na procura de um kartódromo que fosse viável para todos, acharam o Kartforces, um kartódromo próximo à Cidade Universitária. Entretanto, a pista era muito pequena e comportava apenas dois corredores por bateria. Como bons maratonistas apaixonados por competição, montaram um torneio justo onde todos corriam contra todos, dois a dois, uma única vez. Em cada corrida, o vencedor somava um ponto no placar. Empates são admitidos. O grande campeão foi o maior pontuador. Sabe-se que $n$ maratonistas estavam presentes e:
 
 \begin{itemize}
 	\item Cada maratonista possui uma habilidade $h_i$.
-	\item Se $h_i > h_j$ onde $1 \leq i,j \leq N$ e $i \neq j$, então o maratonista $i$ vence a corrida contra o maratonista $j$.
+	\item Se $h_i > h_j$ onde $1 \leq i,j \leq n$ e $i \neq j$, então o maratonista $i$ vence a corrida contra o maratonista $j$.
 \end{itemize}
 
 Você teve acesso a habilidade de todos os maratonistas e agora se pergunta quem foi o grande campeão.
 
 \subsection*{Entrada}
-\textoDiversasInstanciasEOF
 
 Cada instância é composta por duas linhas. 
-A primeira linha contém um inteiro $N$, o número de maratonistas.
-A segunda linha contém $N$ inteiros $h_i$, a habilidade do $i-$ésimo maratonista. 
+A primeira linha contém um inteiro $n$, o número de maratonistas.
+A segunda linha contém $n$ inteiros $h_i$, a habilidade do $i$-ésimo maratonista. 
 
 
 \subsection*{Saída}
@@ -26,10 +25,13 @@ A saída consiste em um único inteiro $i$, o maratonista campeão. Caso não se
 
 \subsection*{Restrições}
 \begin{itemize}
-  \item $1 \leq N \leq 10^5$
-  \item $0 \leq h_i \leq 10^{10}$
+  \item $1 \leq n \leq 10^5$
+  \item Para todo $i$, $0 \leq h_i \leq 10^9$
 \end{itemize}
 
 \subsection*{Exemplos}
 
+\begin{center}
 \exemplo{tests/in1}{tests/out1}
+\exemplo{tests/in2}{tests/out2}
+\end{center}
