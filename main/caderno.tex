@@ -34,11 +34,9 @@
 
 \newcommand{\insereArquivo}[1]{\VerbatimInput[xleftmargin=0mm,numbers=none,obeytabs=true]{\PASTA/#1}}
 
-\newcommand{\memoriaProblema}[1]{\vspace{-0.3cm} \noindent {\em
-Memory Limit per test: \texttt{#1 megabytes} \\}}
+\newcommand{\memoriaProblema}[1]{\vspace{-0.3cm} \noindent { \emph{Memory Limit per test:} \texttt{#1 megabytes} \\}}
 
-\newcommand{\tempoProblema}[1]{\vspace{-0.3cm} \noindent {\em
-Time Limit per test: \texttt{#1 seconds} \\}}
+\newcommand{\tempoProblema}[1]{\vspace{-0.3cm} \noindent { \emph{Time Limit per test:} \texttt{#1 seconds} \\}}
 
 \newcommand{\textoSaidaPadrao}{\vspace{0.2cm} \noindent \emph{A
 saída deve ser escrita na saída padrão.}}
@@ -120,12 +118,28 @@ Quinta-feira, 28 de abril de 2016.
 \section*{Instruções}
 
 \begin{itemize}
-	\item A competição tem duração de 5 horas;
-	\item A entrada de cada problema deve ser lida da entrada padrão (teclado);
-	\item A saída de cada problema deve ser escrita na saída padrão (tela);
+	\item A competição tem duração de 5 horas.
+	\item A entrada de cada problema deve ser lida da entrada padrão (teclado).
+	\item A saída de cada problema deve ser escrita na saída padrão (tela).
 	\item Siga o formato apresentado na descrição da saída, caso contrário não é garantido que seu
-	código será aceito;
-	\item Na saída, toda linha deve terminar com o caracter `\texttt{\textbackslash n}';
+	código será aceito.
+	\item Na saída, toda linha deve terminar com o caracter `\texttt{\textbackslash n}'.
+\end{itemize}
+
+\section*{Pontuação} 
+
+\begin{itemize}
+	\item A cada problema aceito serão somados $x$ pontos a sua pontuação, onde $x$ é 
+	o minuto de duração da prova onde problema foi submetido. Ex: Se você submeteu o 
+	problema B aos 156 minutos de prova, então sua pontuação será acrescentada em 156
+	pontos.
+	\item Suponhamos que você mandou determinado problema $n$ vezes e apenas na vez $n+1$
+	ele foi aceito. Então uma penalidade de 20 pontos por tentativa será acrescentado a sua
+	pontuação, ou seja, será somado $n*20$ ao total já acumulado. Atenção: a penalização só 
+	será adicionada se ao final das tentativas o problema for aceito.
+	\item Você sempre ganha daqueles que resolveram menos problemas que você.
+	\item O desempate entre equipes que resolveram o mesmo número de problemas é feito 
+	pela pontuação: quem tiver a menor vence.
 \end{itemize}
 
 \vspace*{1.0cm}
@@ -134,20 +148,21 @@ Quinta-feira, 28 de abril de 2016.
 \begin{center}
 	\begin{tabular}{|c|l|p{5.8cm}|}
 		\hline
-		\multicolumn{3}{|c|}{Respostas das submissões}\\
+		\multicolumn{2}{|c|}{Respostas das submissões}\\
 		\hline
-		Accepted & \multicolumn{1}{|c|}{-} & Código aceito. Parabéns!\\
+		Running on Test $\#$ & Seu programa está sendo testado no caso $\#$. Paciência.\\
 		\hline
-		\multirow{11}{*}{NO} & Compilation error & Erro de compilação\\
-		\cline{2-3}
-		 & Wrong answer & Errado. Pode tentar de novo.\\
-		\cline{2-3}
-		 & \multirow{2}{*}{Time limit exceeded} & 
+		Accepted & Código aceito. Parabéns!\\
+		\hline
+		Compilation error & Erro de compilação\\
+		\hline
+		Wrong answer & Errado. Pode tentar de novo.\\
+		\hline
+		Time limit exceeded & 
 		Seu programa demora muito para dar a resposta (certa ou errada)\\
-		\cline{2-3}
-		 & \multirow{2}{*}{Runtime error} & 
+		\hline
+		Runtime error & 
 		Erro em tempo de execução (ex.: \textit{segmentation fault})\\
-		\cline{2-3}
 		\hline
 	\end{tabular}
 \end{center}
