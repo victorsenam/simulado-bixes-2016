@@ -3,35 +3,33 @@ using namespace std;
 
 #include "testlib.h"
 
-char let[6] = {'p','c','t','b','r','k'};
-char qtd[6] = {8,2,2,2,1,1};
+const char let[6] = {'p','c','t','b','r','k'};
+const char qtd[6] = {8,2,2,2,1,1};
+
 char pcs[32];
 char mat[8][8];
 
 bool gen_uniform () {
-    int n = 32;
-    int q = 0;
-    int t = 0;
+    int n = 0;
     bool ma = 0;
-    for (int i = 0; i < n; i++) {
-        if (q == qtd[t])
-            q = 0, t++;
-        if (t == 6)
-            ma = 1, t = 0;
-        q++;
 
-        pcs[i] = let[t];
-        if (ma) 
-            pcs[i] += 'A' - 'a';
+    for (int t = 0; t < 6; t++) {
+        for (int ma = 0; ma < 2; ma++) {
+            for (int q = 0; q < qtd[t]; q++) {
+                pcs[n++] = let[t] + ('A' - 'a')*(ma);
+            }
+        }
     }
 
     int pi = -1;
     int pj = -1;
-    q = 0;
+    int q = 0;
     for (int i = 0; i < 8; i++) {
         for (int j = 0; j < 8; j++) {
             if (rnd.next(0,1) && n) {
-                swap(pcs[rnd.next(n--)], pcs[n]);
+                int pos = rnd.next(n);
+                n--;
+                swap(pcs[pos], pcs[n]);
                 mat[i][j] = pcs[n];
 
                 if (pcs[n] >= 'A' && pcs[n] <= 'Z' && !rnd.next(0,q++)) {
@@ -53,7 +51,8 @@ bool gen_uniform () {
         putchar('\n');
     }
     putchar('a'+pj);
-    putchar('1'+pi);
+    putchar('8'-pi);
+    putchar('\n');
     return 1;
 }
 

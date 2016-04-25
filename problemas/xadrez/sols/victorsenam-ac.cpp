@@ -45,6 +45,7 @@ int main () {
     p[1] = c-'a';
     scanf("%d", p+0);
     p[0]--;
+    p[0] = 7 - p[0];
 
     for (int i = 0; i < 6; i++) {
         for (int k = 0; k < qtd[i]; k++) {

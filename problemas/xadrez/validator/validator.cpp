@@ -32,6 +32,7 @@ int main () {
     int l = inf.readInt(1, 8);
     c -= 'a';
     l--;
+    l = 7 - l;
 
     if (l < 0 || l >= 8 || c < 0 || c >= 8) {
         printf("Invalid position (%d,%d)\n", l, c);
